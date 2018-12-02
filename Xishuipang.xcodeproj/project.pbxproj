@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		E503AE3C2102347A007C1A0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E503AE3B2102347A007C1A0C /* AppDelegate.swift */; };
-		E503AE3E2102347A007C1A0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E503AE3D2102347A007C1A0C /* ViewController.swift */; };
+		E503AE3E2102347A007C1A0C /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E503AE3D2102347A007C1A0C /* HomePageViewController.swift */; };
 		E503AE412102347A007C1A0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E503AE3F2102347A007C1A0C /* Main.storyboard */; };
 		E503AE432102347B007C1A0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E503AE422102347B007C1A0C /* Assets.xcassets */; };
 		E503AE462102347B007C1A0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E503AE442102347B007C1A0C /* LaunchScreen.storyboard */; };
 		E503AE512102347B007C1A0C /* XishuipangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E503AE502102347B007C1A0C /* XishuipangTests.swift */; };
 		E503AE5C2102347B007C1A0C /* XishuipangUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E503AE5B2102347B007C1A0C /* XishuipangUITests.swift */; };
+		E5F2CA7021B4929800976CDE /* VolumeScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2CA6F21B4929800976CDE /* VolumeScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		E503AE382102347A007C1A0C /* Xishuipang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xishuipang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E503AE3B2102347A007C1A0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E503AE3D2102347A007C1A0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E503AE3D2102347A007C1A0C /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		E503AE402102347A007C1A0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E503AE422102347B007C1A0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E503AE452102347B007C1A0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		E503AE572102347B007C1A0C /* XishuipangUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XishuipangUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E503AE5B2102347B007C1A0C /* XishuipangUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XishuipangUITests.swift; sourceTree = "<group>"; };
 		E503AE5D2102347B007C1A0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5F2CA6F21B4929800976CDE /* VolumeScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				E503AE3B2102347A007C1A0C /* AppDelegate.swift */,
-				E503AE3D2102347A007C1A0C /* ViewController.swift */,
+				E503AE3D2102347A007C1A0C /* HomePageViewController.swift */,
 				E503AE3F2102347A007C1A0C /* Main.storyboard */,
+				E5F2CA6F21B4929800976CDE /* VolumeScrollView.swift */,
 				E503AE422102347B007C1A0C /* Assets.xcassets */,
 				E503AE442102347B007C1A0C /* LaunchScreen.storyboard */,
 				E503AE472102347B007C1A0C /* Info.plist */,
@@ -256,7 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E503AE3E2102347A007C1A0C /* ViewController.swift in Sources */,
+				E5F2CA7021B4929800976CDE /* VolumeScrollView.swift in Sources */,
+				E503AE3E2102347A007C1A0C /* HomePageViewController.swift in Sources */,
 				E503AE3C2102347A007C1A0C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
