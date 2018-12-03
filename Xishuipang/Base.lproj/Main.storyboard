@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home Page View Controller-->
+        <!--Home Page-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomePageViewController" customModule="Xishuipang" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home Page" id="BYZ-38-t0r" customClass="HomePageViewController" customModule="Xishuipang" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,7 +59,7 @@
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="27Y-0w-dPC" kind="presentation" id="oLk-LH-MQW"/>
+                                            <segue destination="NkD-yV-q1M" kind="presentation" modalTransitionStyle="crossDissolve" id="oLk-LH-MQW"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -87,7 +87,7 @@
             </objects>
             <point key="canvasLocation" x="136.23188405797103" y="132.88043478260872"/>
         </scene>
-        <!--Table View Controller-->
+        <!--目录-->
         <scene sceneID="n9c-PP-e7y">
             <objects>
                 <tableViewController id="PU5-E3-rXn" sceneMemberID="viewController">
@@ -110,36 +110,94 @@
                             <outlet property="delegate" destination="PU5-E3-rXn" id="c1I-Aa-3X7"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="目录" id="c2n-pS-seh"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HCD-hX-0o6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2099" y="133"/>
+            <point key="canvasLocation" x="2897" y="877"/>
         </scene>
-        <!--View Controller-->
+        <!--所有期刊-->
+        <scene sceneID="zXM-n2-IuW">
+            <objects>
+                <tableViewController id="9Cx-Iy-MSA" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="n7s-5H-qRO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="sIi-gz-YMy">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sIi-gz-YMy" id="P3k-1J-uze">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9Cx-Iy-MSA" id="jIW-Za-Va0"/>
+                            <outlet property="delegate" destination="9Cx-Iy-MSA" id="z6J-z5-w5C"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="所有期刊" id="ION-YL-Djg"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KP9-Ru-u7b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2897" y="-645"/>
+        </scene>
+        <!--阅读-->
         <scene sceneID="edc-cH-xnq">
             <objects>
                 <viewController id="27Y-0w-dPC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Gy-aZ-Ygm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAL-Bp-yfq" customClass="VolumeScrollView" customModule="Xishuipang" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
-                            </scrollView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="bAL-Bp-yfq" firstAttribute="top" secondItem="Lf2-td-e21" secondAttribute="top" id="LeR-XK-sKI"/>
-                            <constraint firstItem="bAL-Bp-yfq" firstAttribute="trailing" secondItem="Lf2-td-e21" secondAttribute="trailing" id="iGc-io-qFf"/>
-                            <constraint firstItem="bAL-Bp-yfq" firstAttribute="bottom" secondItem="Lf2-td-e21" secondAttribute="bottom" id="koe-Oh-U3g"/>
-                            <constraint firstItem="bAL-Bp-yfq" firstAttribute="leading" secondItem="Lf2-td-e21" secondAttribute="leading" id="pwR-ou-FWJ"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Lf2-td-e21"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="阅读" id="jSC-i4-Bet"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IX4-3c-A0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2897.1014492753625" y="132.88043478260872"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sc1-zg-MjI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NkD-yV-q1M" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8Qb-m5-fAN">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="l4i-ZA-DUQ" kind="relationship" relationship="rootViewController" id="Rw7-zM-D4X"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NfE-b4-b0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="1082.608695652174" y="132.88043478260872"/>
+        </scene>
+        <!--溪水旁-->
+        <scene sceneID="rvZ-ga-udQ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="l4i-ZA-DUQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="溪水旁" id="Sfk-tK-TqY"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sui-4L-Tqj">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9Cx-Iy-MSA" kind="relationship" relationship="viewControllers" id="gGt-tO-HXG"/>
+                        <segue destination="27Y-0w-dPC" kind="relationship" relationship="viewControllers" id="TOu-va-cBI"/>
+                        <segue destination="PU5-E3-rXn" kind="relationship" relationship="viewControllers" id="org-3h-i6q"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ju-XH-1PM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1989.8550724637682" y="132.88043478260872"/>
         </scene>
     </scenes>
     <resources>

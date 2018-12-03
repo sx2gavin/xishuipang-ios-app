@@ -27,6 +27,5 @@ class VolumeScrollView: UIScrollView {
     }
     
     func loadContentToScrollView() {
-        
     }
 }
