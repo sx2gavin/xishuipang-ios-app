@@ -152,7 +152,18 @@
                     <view key="view" contentMode="scaleToFill" id="5Gy-aZ-Ygm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N25-Jw-5yg" customClass="ArticleScrollView" customModule="Xishuipang" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="N25-Jw-5yg" firstAttribute="top" secondItem="Lf2-td-e21" secondAttribute="top" id="2pf-k8-8HY"/>
+                            <constraint firstItem="N25-Jw-5yg" firstAttribute="trailing" secondItem="Lf2-td-e21" secondAttribute="trailing" id="Mj7-My-cYr"/>
+                            <constraint firstItem="N25-Jw-5yg" firstAttribute="leading" secondItem="Lf2-td-e21" secondAttribute="leading" id="XWL-xB-xbn"/>
+                            <constraint firstItem="N25-Jw-5yg" firstAttribute="bottom" secondItem="Lf2-td-e21" secondAttribute="bottom" id="k2L-dN-cS2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Lf2-td-e21"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="阅读" id="jSC-i4-Bet"/>
@@ -186,13 +197,14 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="溪水旁" id="Sfk-tK-TqY"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sui-4L-Tqj">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9Cx-Iy-MSA" kind="relationship" relationship="viewControllers" id="gGt-tO-HXG"/>
-                        <segue destination="27Y-0w-dPC" kind="relationship" relationship="viewControllers" id="TOu-va-cBI"/>
                         <segue destination="PU5-E3-rXn" kind="relationship" relationship="viewControllers" id="org-3h-i6q"/>
+                        <segue destination="27Y-0w-dPC" kind="relationship" relationship="viewControllers" id="TOu-va-cBI"/>
+                        <segue destination="9Cx-Iy-MSA" kind="relationship" relationship="viewControllers" id="gGt-tO-HXG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ju-XH-1PM" userLabel="First Responder" sceneMemberID="firstResponder"/>

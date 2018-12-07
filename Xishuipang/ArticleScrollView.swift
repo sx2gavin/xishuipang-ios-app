@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VolumeScrollView: UIScrollView {
+@IBDesignable class ArticleScrollView: UIScrollView {
 
     /*
     // Only override draw() if you perform custom drawing.
@@ -17,15 +17,24 @@ class VolumeScrollView: UIScrollView {
         // Drawing code
     }
     */
+    var article = Article()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        loadArticleToView()
     }
     
     required init?(coder : NSCoder) {
         super.init(coder: coder)
+        loadArticleToView()
     }
-    
-    func loadContentToScrollView() {
+    func loadArticleToView() {
+        let title = UILabel(frame: CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height))
+        title.text = article.title
+        addSubview(title)
+        
+        let category = UILabel(frame: CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height))
+        category.text = article.category
+        addSubview(category)
     }
 }
