@@ -31,10 +31,10 @@
                                 <rect key="frame" x="20" y="120" width="374" height="516"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KjD-KI-bHI">
-                                        <rect key="frame" x="8.3333333333333428" y="0.0" width="357.66666666666663" height="148.33333333333334"/>
+                                        <rect key="frame" x="9.3333333333333428" y="0.0" width="355.66666666666663" height="185.33333333333334"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="溪水旁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nac-hY-AAa">
-                                                <rect key="frame" x="72.666666666666686" y="0.0" width="212" height="84.666666666666671"/>
+                                                <rect key="frame" x="71.666666666666686" y="0.0" width="212" height="84.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="70"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -42,8 +42,8 @@
                                                 <size key="shadowOffset" width="1" height="1"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="溪水旁杂志是由多伦多华人福音堂的弟兄姐妹们编辑而成的属灵杂志。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEA-We-NLS">
-                                                <rect key="frame" x="0.0" y="94.666666666666657" width="357.66666666666669" height="53.666666666666657"/>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                                                <rect key="frame" x="0.0" y="94.666666666666657" width="355.66666666666669" height="90.666666666666657"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <size key="shadowOffset" width="1" height="1"/>
@@ -148,25 +148,41 @@
         <!--阅读-->
         <scene sceneID="edc-cH-xnq">
             <objects>
-                <viewController id="27Y-0w-dPC" sceneMemberID="viewController">
+                <viewController id="27Y-0w-dPC" customClass="ArticleViewController" customModule="Xishuipang" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Gy-aZ-Ygm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N25-Jw-5yg" customClass="ArticleScrollView" customModule="Xishuipang" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N25-Jw-5yg">
+                                <rect key="frame" x="20" y="64" width="374" height="623"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="A3D-lf-d7t">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="623"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="A3D-lf-d7t" secondAttribute="bottom" id="S5m-Gq-nzs"/>
+                                    <constraint firstAttribute="trailing" secondItem="A3D-lf-d7t" secondAttribute="trailing" id="aHF-MY-FaV"/>
+                                    <constraint firstItem="A3D-lf-d7t" firstAttribute="width" secondItem="N25-Jw-5yg" secondAttribute="width" id="lMZ-pI-iEi"/>
+                                    <constraint firstItem="A3D-lf-d7t" firstAttribute="leading" secondItem="N25-Jw-5yg" secondAttribute="leading" id="pug-ta-qrn"/>
+                                    <constraint firstItem="A3D-lf-d7t" firstAttribute="top" secondItem="N25-Jw-5yg" secondAttribute="top" id="wgs-Fz-oaQ"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="N25-Jw-5yg" firstAttribute="top" secondItem="Lf2-td-e21" secondAttribute="top" id="2pf-k8-8HY"/>
-                            <constraint firstItem="N25-Jw-5yg" firstAttribute="trailing" secondItem="Lf2-td-e21" secondAttribute="trailing" id="Mj7-My-cYr"/>
-                            <constraint firstItem="N25-Jw-5yg" firstAttribute="leading" secondItem="Lf2-td-e21" secondAttribute="leading" id="XWL-xB-xbn"/>
-                            <constraint firstItem="N25-Jw-5yg" firstAttribute="bottom" secondItem="Lf2-td-e21" secondAttribute="bottom" id="k2L-dN-cS2"/>
+                            <constraint firstItem="N25-Jw-5yg" firstAttribute="bottom" secondItem="5Gy-aZ-Ygm" secondAttribute="bottomMargin" id="Lji-gH-nAx"/>
+                            <constraint firstItem="N25-Jw-5yg" firstAttribute="trailing" secondItem="5Gy-aZ-Ygm" secondAttribute="trailingMargin" id="r43-Zp-FEf"/>
+                            <constraint firstItem="N25-Jw-5yg" firstAttribute="top" secondItem="5Gy-aZ-Ygm" secondAttribute="topMargin" id="sYb-a7-9O8"/>
+                            <constraint firstItem="N25-Jw-5yg" firstAttribute="leading" secondItem="5Gy-aZ-Ygm" secondAttribute="leadingMargin" id="zZu-Pr-sVi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Lf2-td-e21"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="阅读" id="jSC-i4-Bet"/>
+                    <connections>
+                        <outlet property="articleScrollView" destination="N25-Jw-5yg" id="CF0-eo-SNi"/>
+                        <outlet property="articleStackView" destination="A3D-lf-d7t" id="Xfn-1p-Lpp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IX4-3c-A0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

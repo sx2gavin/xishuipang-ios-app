@@ -17,6 +17,7 @@
 		E5F2CA7021B4929800976CDE /* ArticleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2CA6F21B4929800976CDE /* ArticleScrollView.swift */; };
 		E5F2CA7221BA127C00976CDE /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2CA7121BA127C00976CDE /* Volume.swift */; };
 		E5F2CA7421BA12B400976CDE /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2CA7321BA12B400976CDE /* Article.swift */; };
+		E5F2CA7621BC831200976CDE /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2CA7521BC831200976CDE /* ArticleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		E5F2CA6F21B4929800976CDE /* ArticleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleScrollView.swift; sourceTree = "<group>"; };
 		E5F2CA7121BA127C00976CDE /* Volume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
 		E5F2CA7321BA12B400976CDE /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		E5F2CA7521BC831200976CDE /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				E5F2CA7321BA12B400976CDE /* Article.swift */,
 				E503AE3D2102347A007C1A0C /* HomePageViewController.swift */,
 				E503AE3F2102347A007C1A0C /* Main.storyboard */,
+				E5F2CA7521BC831200976CDE /* ArticleViewController.swift */,
 				E5F2CA6F21B4929800976CDE /* ArticleScrollView.swift */,
 				E503AE422102347B007C1A0C /* Assets.xcassets */,
 				E503AE442102347B007C1A0C /* LaunchScreen.storyboard */,
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5F2CA7021B4929800976CDE /* ArticleScrollView.swift in Sources */,
+				E5F2CA7621BC831200976CDE /* ArticleViewController.swift in Sources */,
 				E503AE3E2102347A007C1A0C /* HomePageViewController.swift in Sources */,
 				E503AE3C2102347A007C1A0C /* AppDelegate.swift in Sources */,
 				E5F2CA7221BA127C00976CDE /* Volume.swift in Sources */,

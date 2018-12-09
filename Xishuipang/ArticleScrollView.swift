@@ -18,23 +18,27 @@ import UIKit
     }
     */
     var article = Article()
+    var stackView = UIStackView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        loadArticleToView()
+        // loadArticleToView()
     }
     
     required init?(coder : NSCoder) {
         super.init(coder: coder)
-        loadArticleToView()
+        // loadArticleToView()
     }
+    
     func loadArticleToView() {
-        let title = UILabel(frame: CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height))
+        let title = UILabel()
         title.text = article.title
-        addSubview(title)
+        stackView.addSubview(title)
         
-        let category = UILabel(frame: CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height))
+        let category = UILabel()
         category.text = article.category
-        addSubview(category)
+        stackView.addSubview(category)
+        
+        addSubview(stackView)
     }
 }
