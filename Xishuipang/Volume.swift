@@ -10,13 +10,15 @@ import Foundation
 
 class Volume : NSObject {
 
+    // MARK: properties
     var volumeNumber: Int = 0
     var publishYear: Int = 2000
     var publishMonth: Int = 1
     var publishDay: Int = 1
     var volumeTheme: String = ""
     
-    var articles = [Article]()
+    // articlesDictionary has key of articleID and value of Article object.
+    var articlesDictionary = [String:Article]()
     
     override init() {
         super.init()

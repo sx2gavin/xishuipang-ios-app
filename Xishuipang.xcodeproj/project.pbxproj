@@ -18,6 +18,9 @@
 		E5F2CA7221BA127C00976CDE /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2CA7121BA127C00976CDE /* Volume.swift */; };
 		E5F2CA7421BA12B400976CDE /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2CA7321BA12B400976CDE /* Article.swift */; };
 		E5F2CA7621BC831200976CDE /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2CA7521BC831200976CDE /* ArticleViewController.swift */; };
+		E5F2CA7821BDC9A000976CDE /* AllVolumeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2CA7721BDC9A000976CDE /* AllVolumeTableViewController.swift */; };
+		E5F2CA7A21BF730800976CDE /* AllVolumeTableViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2CA7921BF730800976CDE /* AllVolumeTableViewControllerDelegate.swift */; };
+		E5F2CA7C21BF73CE00976CDE /* ArticleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2CA7B21BF73CE00976CDE /* ArticleCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		E5F2CA7121BA127C00976CDE /* Volume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
 		E5F2CA7321BA12B400976CDE /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		E5F2CA7521BC831200976CDE /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		E5F2CA7721BDC9A000976CDE /* AllVolumeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllVolumeTableViewController.swift; sourceTree = "<group>"; };
+		E5F2CA7921BF730800976CDE /* AllVolumeTableViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllVolumeTableViewControllerDelegate.swift; sourceTree = "<group>"; };
+		E5F2CA7B21BF73CE00976CDE /* ArticleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +114,12 @@
 				E503AE3B2102347A007C1A0C /* AppDelegate.swift */,
 				E5F2CA7121BA127C00976CDE /* Volume.swift */,
 				E5F2CA7321BA12B400976CDE /* Article.swift */,
+				E5F2CA7721BDC9A000976CDE /* AllVolumeTableViewController.swift */,
+				E5F2CA7921BF730800976CDE /* AllVolumeTableViewControllerDelegate.swift */,
+				E5F2CA7B21BF73CE00976CDE /* ArticleCollectionViewController.swift */,
 				E503AE3D2102347A007C1A0C /* HomePageViewController.swift */,
-				E503AE3F2102347A007C1A0C /* Main.storyboard */,
 				E5F2CA7521BC831200976CDE /* ArticleViewController.swift */,
+				E503AE3F2102347A007C1A0C /* Main.storyboard */,
 				E5F2CA6F21B4929800976CDE /* ArticleScrollView.swift */,
 				E503AE422102347B007C1A0C /* Assets.xcassets */,
 				E503AE442102347B007C1A0C /* LaunchScreen.storyboard */,
@@ -269,7 +278,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5F2CA7021B4929800976CDE /* ArticleScrollView.swift in Sources */,
+				E5F2CA7821BDC9A000976CDE /* AllVolumeTableViewController.swift in Sources */,
 				E5F2CA7621BC831200976CDE /* ArticleViewController.swift in Sources */,
+				E5F2CA7A21BF730800976CDE /* AllVolumeTableViewControllerDelegate.swift in Sources */,
+				E5F2CA7C21BF73CE00976CDE /* ArticleCollectionViewController.swift in Sources */,
 				E503AE3E2102347A007C1A0C /* HomePageViewController.swift in Sources */,
 				E503AE3C2102347A007C1A0C /* AppDelegate.swift in Sources */,
 				E5F2CA7221BA127C00976CDE /* Volume.swift in Sources */,
